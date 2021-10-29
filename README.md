@@ -1,5 +1,7 @@
 # oak_cors
 
+[![Deno](https://github.com/jiawei397/oak_cors/actions/workflows/deno.yml/badge.svg)](https://github.com/jiawei397/oak_cors/actions/workflows/deno.yml)
+
 Forked from the nodejs package
 [expressjs cors](https://github.com/expressjs/cors/blob/master/lib/index.js).
 Now it is just a simple and opinionated cors middleware for Deno
