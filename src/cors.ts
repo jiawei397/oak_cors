@@ -1,7 +1,15 @@
 // deno-lint-ignore-file no-explicit-any
 // Copyright 2021 the oak authors. All rights reserved. MIT license.
-import { Context, Middleware, Request, Response, vary } from "../deps.ts";
-import { CORSHeaders, CorsOptions, MultiCORSHeaders } from "./types.ts";
+import { vary } from "../deps.ts";
+import {
+  Context,
+  CORSHeaders,
+  CorsOptions,
+  Middleware,
+  MultiCORSHeaders,
+  Request,
+  Response,
+} from "./types.ts";
 
 export const defaults: CorsOptions = {
   origin: true, // "*",

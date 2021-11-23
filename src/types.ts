@@ -1,3 +1,4 @@
+// deno-lint-ignore-file no-explicit-any
 export type StaticOrigin = boolean | string | RegExp | (string | RegExp)[];
 
 export type CustomOrigin = (origin: string) => StaticOrigin;
@@ -51,3 +52,23 @@ export interface CORSHeader {
 export type MultiCORSHeaders = CORSHeader[];
 
 export type CORSHeaders = MultiCORSHeaders[] | CORSHeader[] | null;
+
+export interface Context {
+  request: Request;
+  response: Response;
+}
+
+export interface Request {
+  headers: Headers;
+  [x: string]: any;
+}
+
+export interface Response {
+  headers: Headers;
+  [x: string]: any;
+}
+
+export type Middleware = (
+  ctx: Context,
+  next: () => Promise<unknown>,
+) => Promise<unknown>;

@@ -1,4 +1,4 @@
-import { Context } from "../deps.ts";
+import { Context } from "./types.ts";
 import { assertEquals, beforeEach, describe, it } from "../test_deps.ts";
 import { CORS, defaults } from "./cors.ts";
 
