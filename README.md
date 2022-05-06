@@ -10,7 +10,7 @@ Now it is just a simple and opinionated cors middleware for Deno
 ## Example
 
 ```typescript
-import { CORS } from "https://deno.land/x/oak_cors@v0.1.0/mod.ts";
+import { CORS } from "https://deno.land/x/oak_cors@v0.1.1/mod.ts";
 import { Application } from "https://deno.land/x/oak/mod.ts";
 
 const app = new Application();
